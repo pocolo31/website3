@@ -1,0 +1,253 @@
+.flex , .menu {
+    display: flex; 
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+ }
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ ul,ol{
+    list-style: none;
+
+ }
+ a{
+    text-decoration: none;
+    color: inherit;
+ }
+ body{
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    background: #fff;
+    font-family: "Roboto", serif;
+}
+
+button, .btn {
+    background: blue;
+    padding: 10px;
+    color: #fff;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+input{
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+}
+.container{
+    display: block;
+    margin: auto;
+    max-width: 1300px;
+    padding-inline: 20px;
+}
+header{
+    padding-block: 20px;
+}
+h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: blue;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+.right{
+    position: relative;
+    padding: 30px;
+    z-index: 1;
+}
+ 
+.bottom-image{
+    position: absolute;
+    top: 120px;
+    left: -40px;
+    z-index: 2;
+    max-width: 300px;
+    height: 300px;
+
+}
+.top-image{
+    height: 400px;
+    max-width: 400px;
+}
+.btn{
+    display: inline-block;
+    margin-top: 30px;
+    
+}
+.herobanner{
+    background-image: url(image/lunarnewyearcontest-9392710_1280.png) ;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box{
+    background: #f1f1f1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px;
+    border-radius: 8px;
+    
+ 
+
+}
+section{
+    padding-block: 40px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px ;
+    
+}
+h3{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+ .icon{
+    margin-bottom: 30px;
+
+ }
+ h3{
+    cursor: pointer;
+ }
+ 
+
+
+iframe{
+    width: 100%;
+}
+.contact-form form{
+    max-width: 800px;
+    padding: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: auto;
+    
+}
+.contact-form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-form input{
+    width: 100%;
+}
+.box:hover{
+    transform: scale(0.8) ;
+}
+.box{
+    transition: transform 0.3s ease-in-out;
+}
+.socials{
+    display: block;
+    max-width: 800px;
+    margin: auto;
+    
+}
+footer{
+    padding-block: 60px ;
+    background-color: blue;
+}
+.socialbox{
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px ;
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
+.socialbox svg path{
+    fill:white;
+}
+.socialmedia svg path{
+    fill:white;
+
+}
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+
+
+}
+label{
+    margin-block: 10px;
+    display: block;
+
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .onlymobile{
+    display: none;
+  }
+  @media(max-width:768px){
+    .onlymobile{
+        display: block;
+    }
+header nav, header form{
+    display: none;
+}
+.active{
+    display: block;
+}
+header form{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 100px;
+    
+}
+.flex{
+    flex-direction: column;
+}
+.bottom-image{
+    display: none;
+}
+.grid{
+    grid-template-columns: repeat(1,1fr);
+}
+.herobanner {
+    overflow-x: hidden;
+}
+.top-image{
+    padding-inline: 10px;
+}
+header .flex{
+    flex-direction: row;
+}
+header input{
+    width: 80%;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    padding: 20px;
+    background: white;
+    z-index: 9;
+}
+.cross{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+header .menu{
+    flex-direction: column;
+    padding-top: 100px;
+}
+  }
+  
+
+   
